@@ -48,7 +48,7 @@ nav {
 
 header .context {
     width: 80%;
-    margin: 50px auto 20px;
+    margin: 100px auto 0px;
 }
 
 header .box {
@@ -57,12 +57,10 @@ header .box {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    min-height: 80vh;
     position: relative;
     border-radius: 20px;
     box-sizing: border-box;
     padding: 0 20px;
-    margin-top: 100px;
 }
 
 
@@ -82,19 +80,19 @@ header .box>* {
 
 
 header .context h2 {
-    padding-top: 200px;
+    padding-top: 150px;
     color: white;
 }
 
 header .context .bt {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:640px) {
     header .context h2 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 header .context .bt {
-    padding-bottom: 0px;
+    padding-bottom: 50px;
 }
 }
 /* end header */
