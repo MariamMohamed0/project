@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learn & Teach</title>
+</head>
+
+<body>
+    <header id="home" class=" h-[80vh]">
+        <nav class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div>
+                        <img src="images/logo.png" alt="Logo" class="h-8 w-30">
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#home" class="text-gray-600 font-bold hover:text-blue-500 text-xl">Home</a>
+                        <a href="#about" class="text-gray-600 font-bold hover:text-blue-500 text-xl">About</a>
+                        <a href="#section" class="text-gray-600 font-bold hover:text-blue-500 text-xl">Section</a>
+                        <a href="#contact" class="text-gray-600 font-bold hover:text-blue-500 text-xl">Contact</a>
+                    </div>
+                    <div class="hidden md:flex space-x-2">
+                        <a href="#" class="btn-outline px-3 py-1 rounded-md">Login</a>
+                        <a href="#" class="btn-primary px-3 py-1 rounded-md">Sign Up</a>
+                        <button id="dark-toggle" class="text-2xl text-gray-700 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+
+                    <div class="md:hidden flex items-center space-x-3">
+                        <button id="dark-toggle-mobile" class="text-2xl text-gray-700 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+
+                        <button id="menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-4 py-3">
+                    <a href="#home" class="block text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="#about" class="block text-gray-600 hover:text-blue-500">About</a>
+                    <a href="#sections" class="block text-gray-600 hover:text-blue-500">Sections</a>
+                    <a href="#contact" class="block text-gray-600 hover:text-blue-500 mb-4">Contact</a>
+                    <div class="flex justify-between gap-2">
+                        <a href="#" class="btn-outline w-1/2 px-3 py-1 rounded-md text-center">Login</a>
+                        <a href="#" class="btn-primary w-1/2 px-3 py-1 rounded-md text-center">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container context mt-5 text-white px-4">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Unlock Your Potential. Share Your Knowledge</h2>
+                <p class="text-base sm:text-lg leading-relaxed mb-6">
+                    A dynamic learning platform where passionate learners come together to master new skills, share
+                    their experiences,
+                    and inspire one another. Here, growth never stops — every lesson, every challenge, and every
+                    connection helps you
+                    become the best version of yourself.
+                </p>
+                <div>
+                    <button class="btn-outline px-4 py-2 rounded-md">Start Learning</button>
+                    <button class="btn-primary px-4 py-2 rounded-md">Become an Instructor</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="my-16 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-blue-700">About Us</h2>
+
+            <div class="flex flex-col md:flex-row items-center gap-8 text-left">
+
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="images/about.png" alt="About Image"
+                        class="w-4/5 md:w-[500px] lg:w-[600px] rounded-lg shadow-lg object-cover">
+                </div>
+
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Our platform is dedicated to empowering individuals through accessible and engaging online
+                        education.
+                        We believe that learning is a lifelong journey, and our mission is to provide a supportive
+                        community
+                        where learners can thrive. Whether you're looking to acquire new skills, advance your career, or
+                        explore
+                        new hobbies, we offer a diverse range of courses designed to meet your needs.
+                        <br><br>
+                        Join us today and start your journey towards personal and professional growth!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section" class="my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Sections</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+
+            <div class="border-2 border-blue-500 rounded-xl p-6 text-center shadow hover:shadow-lg transition">
+                <i class="fa-solid fa-code text-blue-600 text-4xl mb-4"></i>
+                <h5 class="text-xl font-semibold mb-2">Programming</h5>
+                <p class="text-gray-600 mb-4">
+                    A dynamic platform where learners master coding and grow their technical skills.
+                </p>
+                <a href="#"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    Enroll
+                </a>
+            </div>
+
+
+            <div class="border-2 border-blue-500 rounded-xl p-6 text-center shadow hover:shadow-lg transition">
+                <i class="fa-solid fa-utensils text-blue-600 text-4xl mb-4"></i>
+                <h5 class="text-xl font-semibold mb-2">Cooking</h5>
+                <p class="text-gray-600 mb-4">
+                    Explore the art of cooking with step-by-step lessons, delicious recipes, and expert techniques
+                    to improve your culinary skills.
+                </p>
+                <a href="#"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    Enroll
+                </a>
+            </div>
+
+
+            <div class="border-2 border-blue-500 rounded-xl p-6 text-center shadow hover:shadow-lg transition">
+                <i class="fa-solid fa-language text-blue-600 text-4xl mb-4"></i>
+                <h5 class="text-xl font-semibold mb-2">Languages</h5>
+                <p class="text-gray-600 mb-4">
+                    Learn new languages and connect with cultures around the world through interactive lessons
+                    and real-world conversations.
+                </p>
+                <a href="#"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    Enroll
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact" class="contact my-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-blue-700">Contact Us</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto bg-blue-50">
+            <div class="border-2 border-blue-500 rounded-xl p-8 shadow hover:shadow-lg transition">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-left font-medium text-gray-700 mb-2 text-xl">Name</label>
+                        <input type="text" placeholder="Enter your name"
+                            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-left font-medium text-gray-700 mb-2 text-xl">Email</label>
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-left font-medium text-gray-700 mb-2 text-xl">Message</label>
+                        <textarea rows="4" placeholder="Write your message..."
+                            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition w-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            <div
+                class="border-2 border-blue-500 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition bg-blue-50 flex flex-col justify-center">
+                <h3 class="text-2xl font-bold text-blue-700 mb-8 text-center">Get in Touch</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+
+                    <div class="bg-white rounded-xl p-6 shadow hover:shadow-md transition flex flex-col items-center">
+                        <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-3">
+                            <i class="fa-solid fa-phone text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Phone</h4>
+                        <p class="text-gray-600 mt-1">+20 158 937 5465</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow hover:shadow-md transition flex flex-col items-center">
+                        <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-3">
+                            <i class="fa-solid fa-envelope text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                        <p class="text-gray-600 mt-1">info@gmail.com</p>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl p-6 shadow hover:shadow-md transition flex flex-col items-center sm:col-span-2">
+                        <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-3">
+                            <i class="fa-solid fa-clock text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800">Working Hours</h4>
+                        <p class="text-gray-600 mt-1">Sunday – Thursday: 9 AM – 10 PM</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div
+            class="bg-blue-100 w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-5 py-6 rounded-2xl shadow-md">
+
+
+            <div class="flex flex-wrap justify-center md:justify-start items-center gap-6 text-center">
+                <a href="#home" class="text-gray-600 hover:text-blue-500 font-medium">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-500 font-medium">About</a>
+                <a href="#sections" class="text-gray-600 hover:text-blue-500 font-medium">Sections</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500 font-medium">Contact</a>
+            </div>
+
+
+            <div class="flex justify-center md:justify-end items-center gap-5">
+                <a href="#" class="text-gray-600 hover:text-blue-800 text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-800 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-800 text-2xl"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
