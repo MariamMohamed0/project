@@ -89,7 +89,14 @@ header .context h2 {
 header .context .bt {
     padding-bottom: 50px;
 }
-
+@media screen and (max-width:600px) {
+    header .context h2 {
+    padding-top: 100px;
+}
+header .context .bt {
+    padding-bottom: 0px;
+}
+}
 /* end header */
 /* start dark mode */
 
