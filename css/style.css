@@ -51,11 +51,10 @@ header .context {
     background-size: cover;
     background-position: center;
     margin: 30px auto;
-    height: 100%;
     position: relative;
     border-radius: 20px;
     color: white;
-   padding: 200px 20px 20px 30px;
+    padding: 150px 20px 150px 30px;
     margin-top: 100px;
 }
 
@@ -149,6 +148,5 @@ header .context p {
 .dark .text-gray-800 {
     color: #d1d5db !important;
 }
-
 
 /* end dark mode */
