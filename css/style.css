@@ -47,18 +47,26 @@ nav {
 }
 
 header .context {
+    width: 80%;
+    margin: 50px auto 20px;
+}
+
+header .box {
     background-image: url("../images/hero.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    margin: 30px auto;
+    width: 100%;
+    min-height: 80vh;
     position: relative;
     border-radius: 20px;
-    color: white;
-    padding: 150px 20px 150px 30px;
+    box-sizing: border-box;
+    padding: 0 20px;
     margin-top: 100px;
 }
 
-header .context::before {
+
+header .box::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
@@ -67,21 +75,19 @@ header .context::before {
     border-radius: 20px;
 }
 
-header .context>* {
+header .box>* {
     position: relative;
     z-index: 2;
 }
 
+
 header .context h2 {
+    padding-top: 200px;
     color: white;
-    font-size: 30px;
-    margin-bottom: 20px;
 }
 
-header .context p {
-    margin-bottom: 30px;
-
-    color: rgba(255, 255, 255, 0.8);
+header .context .bt {
+    padding-bottom: 50px;
 }
 
 /* end header */
